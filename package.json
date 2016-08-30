@@ -1,8 +1,9 @@
 {
   "name": "mm5-layouts",
-  "description": "The on-stream graphics used during Summer Games Done Quick 2016.",
+  "description": "On screen NodeCG layouts for Mega Manathon 5 (powered by NodeCG / sgdq16-layouts)",
   "version": "1.0.0",
   "contributors": [
+    "Cody Wilson <cody@codywilson.co>",
     "Alex Van Camp <email@alexvan.camp>",
     "Chris Hanel <chrishanel@gmail.com>"
   ],

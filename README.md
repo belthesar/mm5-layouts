@@ -1,5 +1,5 @@
-# sgdq16-layouts
-The on-stream graphics used during Summer Games Done Quick 2016.
+# mm5-layouts
+The on-stream graphics used during Mega Manathon 5 (based significantly on the NodeCG layouts for Summer Games Done Quick 2016).
 
 This is a [NodeCG](http://github.com/nodecg/nodecg) 0.8 bundle. You will need to have NodeCG 0.8 installed to run it.
 

@@ -1,5 +1,5 @@
 {
-  "name": "sgdq16-layouts",
+  "name": "mm5-layouts",
   "description": "The on-stream graphics used during Summer Games Done Quick 2016.",
   "version": "1.0.0",
   "contributors": [
@@ -297,7 +297,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/GamesDoneQuick/sgdq16-layouts.git"
+    "url": "git://github.com/belthesar/mm5-layouts.git"
   },
   "scripts": {
     "static": "eslint ./**/*.js ./**/*.html --ignore-path .eslintignore",

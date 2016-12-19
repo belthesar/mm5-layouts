@@ -17,6 +17,7 @@
 				this.techStationDuties = newVal.techStationDuties;
 				this.otherDuties = newVal.otherDuties;
 			});
+
 		},
 
 		_checkboxChanged(e) {

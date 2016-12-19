@@ -56,6 +56,19 @@
 
 			// CTA is the first thing we show, so we use this to start our loop
 			this.showCTA();
+
+			nodecg.log.info("Registering scene change");
+			//If this is loaded in OBS Studio, register the scene change callback
+			if(window.obsstudio){
+				nodecg.log.info("OBS Found");
+				window.obsstudio.onSceneChange = function(sceneName) {
+					nodecg.sendMessage("sceneChange", sceneName);
+				};
+			} else {
+				nodecg.log.info("OBS Not Found!");
+				nodecg.sendMessage("sceneChange", null);
+				console.log("OBS Studio not detected.");
+			}
 		},
 
 		totalChanged(newVal) {

@@ -28,9 +28,20 @@ module.exports = function (nodecg) {
 			{name: 'Steam Notifications Off', complete: false}
 		]
 	};
-
 	// Instantiate replicant with defaults object, which will load if no persisted data is present.
 	const checklist = nodecg.Replicant('checklist', {defaultValue: checklistDefault});
+
+	nodecg.listenFor('sceneChange', function(data){
+		nodecg.log.info("Listener hit!");
+		console.log("Test! " + data);
+		if(nodecg.bundleConfig.checklist && nodecg.bundleConfig.checklist[data]){
+			nodecg.log.info("Listener hit!");
+			checklist.value = nodecg.bundleConfig.checklist[data];
+		} else {
+			nodecg.log.info("No checklist value found.");
+			checklist.value = checklistDefault;
+		}
+	});
 
 	// Reconcile differences between persisted value and what we expect the checklistDefault to be.
 	const persistedValue = checklist.value;

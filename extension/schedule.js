@@ -188,7 +188,7 @@ module.exports = function (nodecg) {
 	function update() {
 		const runnersPromise = request({
 			uri: nodecg.bundleConfig.useMockData ?
-				'https://dl.dropboxusercontent.com/u/6089084/gdq_mock/runners.json' :
+				'https://dl.dropboxusercontent.com/u/16301110/mm5-api/runners.json' :
 				'https://private.gamesdonequick.com/tracker/search',
 			qs: {
 				type: 'runner',
@@ -199,7 +199,7 @@ module.exports = function (nodecg) {
 
 		const schedulePromise = request({
 			uri: nodecg.bundleConfig.useMockData ?
-				'https://dl.dropboxusercontent.com/u/6089084/gdq_mock/schedule.json' :
+				'https://dl.dropboxusercontent.com/u/16301110/mm5-api/schedule.json' :
 				'https://private.gamesdonequick.com/tracker/search',
 			qs: {
 				type: 'run',
